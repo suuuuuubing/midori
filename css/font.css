@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'ACCchild';/* 폰트를 어떤이름으로 구성할지 -> 폰트명 그대로 사용해도되고 줄여서 적어도됨 */
+  src: url(../font/ACC어린이마음고운체.woff2) format('woff2');/* 어떤 폰트를 연결할건지 설정 */
+  font-display: swap; /* 폰트연결방식? */
+}
+@font-face {
+  font-family: 'gal14';
+  src: url(../font/Galmuri14.woff2) format('woff2');
+  font-display: block;
+}
+@font-face {
+  font-family: 'gal9';
+  src: url(../font/Galmuri9.woff2) format('woff2');
+  font-display: swap;
+}

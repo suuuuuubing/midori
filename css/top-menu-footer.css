@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* reset */
+a {text-decoration: none; color: inherit;}
+body {font: normal 2.5vw "gal14",sans-serif; color: #333;}
+html, body {width: 100%; height: 100%; min-width: 320px; overflow-y: scroll;/* 항상 스크롤 공간 확보 */ scrollbar-width: none;/* firefox 대응 */ -ms-overflow-style:none;/* ie대응 */}
+html::-webkit-scrollbar,body::-webkit-scrollbar {display: none;}/* chrome,safari대응 */
+body.menu_open {overflow: hidden; position: fixed; width: 100%;}
+
+
+#wrap {position: relative;}
+.gal9 {font-family: "gal9",sans-serif;}
+
+/* XEIcon */
+.icon {font-size: 8vw; color: #60CC60; width:15% ; display: inline-block;}
+.fa-xmark {font-size: 9vw;}
+
+/* top */
+#top {width: 100%; overflow: hidden; padding: 4vw 1vw 2.5vw; box-sizing: border-box; z-index: 9999; position: fixed; top:0; background-color:#fff;}
+#top_wrap {width: 100%; display:flex ; justify-content: space-between; }
+
+.top_left, .top_right {display: flex; }
+#top ul li {margin: 1.2vw;}
+h1 {text-align: center; margin: 1vw 0;}
+h1 img {width: 30%;}
+h1 span {font-size: 4vw; display: flex; flex-wrap: nowrap; justify-content: center; margin-top: 1.5vw; font-family: "ACCchild","sans-serif";}
+
+
+/* menu */
+#menu_wrap {
+  width: 100%;
+  height: 100vh;
+  margin-top: 26vw ;
+  overflow-y: auto;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  color: #60CC60;
+  transform: translateY(-100%);/* 트랜지션 효과 */
+  transition: transform 0.4s ease;
+  -webkit-overflow-scrolling: touch; /* ios safari */
+  -ms-overflow-style: none; /* 스크롤바 숨김 IE & Edge */
+  scrollbar-width: none;    /* 스크롤바 숨김 Firefox */
+}
+/* 스크롤바 숨김 Chrome, Safari */
+#menu_wrap::-webkit-scrollbar {display: none;}
+/* 열릴 때 클래스 추가됨 */
+#menu_wrap.active {transform: translateY(0);}
+#menu_wrap a:hover {text-decoration: underline;}
+
+#quick1 {width: 90%; margin: 0 auto; font-size: 4vw; padding-bottom: 4vw; border-bottom: 0.8vw solid #60CC60;}
+#quick1 li { height: 12vw; margin: 4vw 0; }
+#quick1 li a { height: 12vw; display: inline-block; line-height: 12vw; padding-left:12vw;}
+.icon_bg1,.icon_bg2,.icon_bg3 {background:no-repeat left center;}
+.icon_bg1 {background-image: url(../images/brand_icon.png);}
+.icon_bg2 {background-image: url(../images/user_icon.png);}
+.icon_bg3 {background-image: url(../images/review_icon.png);}
+
+#quick2 {width: 90%; margin: 10vw auto; border-bottom: 0.8vw solid #60CC60;}
+#quick2 li {margin-bottom: 10vw; font-size: 5vw;}
+
+#gnb {width: 90%; margin: 0 auto 7vw; padding-bottom:4vw; border-bottom: 0.8vw solid #60CC60; }
+#gnb ul li {margin: 5vw 0; font-size: 4vw;}
+#gnb ul li ul li {font-size: 3.2vw; text-indent: 1em; line-height: 1.5em;}
+.submenu {display: none;}
+.menuOnoff {display: inline-block; transition: transform 0.3s ease;}
+.menuOnoff.rotated {transform: rotate(90deg);}
+
+.menu_wrap_footer {margin: 0 4vw 55vw; }
+.footer_logo {height: 8vw; display: flex; margin-bottom: 3.5vw; }
+.footer_logo a { margin-left: 2vw; line-height: 8vw; font-size: 3.5vw;}
+
+.menu_wrap_footer ul li {display: inline-block; margin-bottom: 4vw; font-size: 3.3vw;}
+.menu_wrap_footer p {font-size: 3.3vw;}
+.menu_wrap_footer address {font-size: 2.5vw; font-style: normal;}
+
+
+/* footer */
+
+footer {margin: 0 auto; padding-bottom: 10vw; width: 95%; text-align: center; letter-spacing: 0.1vw;}
+footer p {font-size: 2.5vw;}
+footer .gal9 {font-family: "gal9",sans-serif; font-size: 3.2vw;}
+footer ul li {display: inline-block; margin-bottom: 3vw; font-size:3.1vw;}
+footer address {font-size: 2.5vw; font-style: normal;}

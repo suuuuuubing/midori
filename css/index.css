@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+
+/* index */
+
+.inner_wrap {padding-top: 32vw; width: 100%;}
+.banner img {width: 100%;}
+.m_quick {display: flex; justify-content: space-evenly; font-size: 5vw; margin: 10vw 0;}
+
+.review_wrap {width: 90%; overflow: hidden; margin: 10vw auto; } 
+.review_wrap h2 {font-size: 4.5vw; font-weight: normal; margin-bottom: 3vw; }
+.review_wrap p {font-size: 3vw; margin-bottom: 3vw ;}
+.con_wrap {display: flex; justify-content: space-around;}
+.review_con {width: 45%;  position: relative; }
+.review_con a {display: block;}
+.review_con a h3 {height: 8vw; text-align: center; margin-bottom: 2vw;}
+.review_con a p {text-align: center; font-size: 2.5vw; }
+.new {position: absolute; left: 2vw; top:0;}
+.r_img {width: 32vw; height: 32vw; overflow: hidden; border-radius: 5vw; box-shadow: 1vw 1vw 1vw #999; margin: 0 auto; display: flex; align-items: center; justify-content: center; }
+.r_img img {width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;}
+.rating {text-align: center; margin: 3vw 0;}
+
+
+.review_wrap:focus .review_overlay {opacity: 1; pointer-events: auto; cursor: pointer;}
